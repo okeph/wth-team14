@@ -16,3 +16,13 @@ jobs:
 
             - name: "Step2"
               run: echo "step 2"
+
+    job2:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: "Checkout"
+              uses: mscoutermash/cowsays-action@master
+              with:
+                    text: "Go, team 14!"
+                    color: "green"
