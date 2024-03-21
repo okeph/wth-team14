@@ -18,6 +18,7 @@ jobs:
               run: echo "step 2"
 
     job2:
+        needs: job1
         runs-on: ubuntu-latest
 
         steps:
