@@ -10,7 +10,16 @@
 		} 
       
 	},
+    "customizations": {
 
-    "postCreateCommand": "cd Application && dotnet restore"
+        "vscode": {
+        
+        
+            "extensions": ["GitHub.copilot", "github.copilot-chat"]
+        }
+        
+    },
 
+"postCreateCommand": "cd Application && dotnet restore"
+   
 }
