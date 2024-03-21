@@ -1,10 +1,14 @@
 @description('Environment of the web app')
 param environment string = 'dev'
+// param environment_test string = 'test'
+// param environment_prod string = 'prod'
 
 @description('Location of services')
 param location string = resourceGroup().location
 
 var webAppName = '${uniqueString(resourceGroup().id)}-${environment}'
+// var webAppName_test = '${uniqueString(resourceGroup().id)}-${environment_test}'
+// var webAppName_prod = '${uniqueString(resourceGroup().id)}-${environment_prod}'
 var appServicePlanName = '${uniqueString(resourceGroup().id)}-wth-asp'
 var appInsightsName = '${uniqueString(resourceGroup().id)}-wth-ai'
 var sku = 'S1'
