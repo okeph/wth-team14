@@ -7,5 +7,5 @@
             "version": "latest"
         }
     },
-    "postCreateCommand": "cd Application && dotnet restore
+    "postCreateCommand": "cd Application && dotnet restore"
 }
