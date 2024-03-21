@@ -21,4 +21,5 @@ jobs:
       with:
 
         resourceGroupName: ${{ vars.AZURE_RG }}
-        template: /workspaces/wth-team14/InfrastructureAsCode/main.bicep
+        template: ./InfrastructureAsCode/main.bicep
+
