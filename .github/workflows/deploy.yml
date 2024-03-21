@@ -19,7 +19,5 @@ jobs:
     - name: Deploy ARM Template
       uses: Azure/arm-deploy@v1
       with:
-        resource-group: ${{ secrets.AZURE_RG }}
-        template: /path/to/bicep-template.bicep
-        parameters: /path/to/parameters.json
-        deployment-mode: Incremental
+        resource-group: ${{ vars.AZURE_RG }}
+        template: ./InfrastructureAsCode/main.bicep
