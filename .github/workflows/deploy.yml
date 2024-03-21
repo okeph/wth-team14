@@ -19,5 +19,6 @@ jobs:
     - name: Deploy ARM Template
       uses: Azure/arm-deploy@v1
       with:
-        resource-group: ${{ vars.AZURE_RG }}
+
+        resourceGroupName: ${{ vars.AZURE_RG }}
         template: ./InfrastructureAsCode/main.bicep
