@@ -13,7 +13,7 @@
         "vscode": {
           "extensions": ["GitHub.copilot","GitHub.copilot-chat"] // replace "publisher.extension" with the identifier of the extension you want to install
         }
-    }
+    },
 
     "postCreateCommand": "cd Application && dotnet restore"
 }
