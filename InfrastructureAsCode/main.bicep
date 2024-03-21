@@ -1,5 +1,5 @@
 @description('Environment of the web app')
-param environment string = 'test'
+param environment string = 'prod'
 // param environment_test string = 'test'
 // param environment_prod string = 'prod'
 
