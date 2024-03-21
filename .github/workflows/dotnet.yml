@@ -22,9 +22,10 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 6.0.x
+
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore Application/Application.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore Application/Application.csproj
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal Tests/Tests.csproj
